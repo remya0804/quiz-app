@@ -1,0 +1,28 @@
+1. to clear current elements,
+
+        while(answersElement.firstChild){
+
+                answersElement.removeChild(answersElement.firstChild);
+            }
+
+2. to get child elemts inside element ass array;
+
+        Array.from(answersElement.children).forEach((answer) => {
+
+                if(answer.dataset.s==="true"){
+
+                    answer.classList.add("right");
+                } 
+
+3. to disable,
+
+    answer.disabled = true;
+
+4. to access element in array that is not in dom,(html elmt)
+
+        if(a.status){
+
+                    answerButton.dataset.s = a.status;
+                } 
+
+
